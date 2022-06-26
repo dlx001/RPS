@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="game.js"></script>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <button onclick="game()">start game</button>
+    <div class="game">
+        <div class="choices"><button id="0">rock</button>
+            <button id="1">paper</button>
+            <button id="2">scissors</button>
+        </div>
+        <h3>SCORE</h3>
+        <div class="container1">
+            <div class="board">
+                <h4>player</h4>
+            <p id="playerscore">0</p>
+            </div>
+            <div class="board">
+                <h4>computer</h4>
+                <p id="compscore">0</p>
+            </div> 
+        </div>
+    </div>
+    <p id="message"></p>
+    <div class="playAgainCenter">
+        <button id="play" onclick="restartGame()">Play Again</button>
+    </div>
+    
+    <script src="game.js"></script>
 </body>
 </html>
